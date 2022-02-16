@@ -1,5 +1,8 @@
-﻿namespace Transportations;
-class Program
+﻿using Transportations.Deliveries;
+using Transportations.Vehicles;
+
+namespace Transportations;
+class TransportationsMain
 {
     static void Main(string[] args)
     {

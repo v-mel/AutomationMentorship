@@ -1,11 +1,14 @@
-﻿namespace Transportations
+﻿using TransportationsLogic.Deiveries;
+
+namespace Transportations.Deliveries
 {
-    public class Delivery
+    public class Delivery :iDelivery
     {   
         public decimal Weight { get; set; }
         public string StartAddress { get; set; }
         public string DestinationAddress { get; set; }
         public int Distance { get; set; }
+        public int RouteType { get; set; }
 
         public Delivery(decimal weigt, string startAddress, string destinationAddress) 
         {
@@ -14,7 +17,5 @@
             this .DestinationAddress = destinationAddress;
             this.Distance = Distance;
         }
-
-
     }
 }
