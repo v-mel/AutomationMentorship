@@ -11,21 +11,21 @@ namespace TransportationsLogic.Vehicles
         /// 500 - plane;
         /// 165 000 - container ship;
         /// </summary>
-        static int weightLimit;
+        int WeightLimit { get;}
         /// <summary>
         /// Delivery Speed is:
         /// 10 - trucks;
         /// 30 - plane;
         /// 5 - container ship;
         /// </summary>
-        static int deliverySpeed;
+        int DeliverySpeed { get;}
         /// <summary>
         /// Routes types between 2 points:
         /// 0 - trucks;
         /// 1 - plane;
         /// 2 - container ship;
         /// </summary>
-        static int routesType;
+        int RoutesType { get;}
         /// <summary>
         /// geogrepahical absolute location represented
         /// as pair of 2 decimal numbers

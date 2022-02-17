@@ -6,9 +6,9 @@ namespace Transportations.Vehicles
     internal class Ship : iVehicle
     {
         public string VehicleName { get; set; }
-        static public int weightLimit = 0;
-        static public int deliverySpeed = 10;
-        static public int routesType = 50;
+        public int WeightLimit { get { return 165000; } }
+        public int DeliverySpeed { get { return 5; } }
+        public int RoutesType { get { return 2; } }
         public decimal[,] Location { get; set; }
         public int VehicleLoad { get; set; }
         public List<iDelivery> DeliveriesLoaded { get; set; }

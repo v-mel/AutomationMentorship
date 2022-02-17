@@ -6,15 +6,14 @@ namespace Transportations.Vehicles
     internal class Plane : iVehicle
     {
         public string VehicleName { get; set; }
-        static public int weightLimit =0;
-        static public int deliverySpeed =10;
-        static public int routesType = 50;
+        public int WeightLimit { get { return 500; } }
+        public int DeliverySpeed { get { return 30; } } 
+        public int RoutesType { get { return 1; } }
         public decimal[,] Location { get; set; }
         public int VehicleLoad { get; set; }
         public List<iDelivery> DeliveriesLoaded { get; set; }
         public Plane (string  vehicleName) {
             this.VehicleName = vehicleName;
-            
             }
     }
 }

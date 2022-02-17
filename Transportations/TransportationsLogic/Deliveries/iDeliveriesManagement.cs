@@ -7,45 +7,45 @@ namespace TransportationsLogic.Deiveries
         /// <summary>
         /// Calculates time needed for delivery
         /// </summary>
-        DateTime CalculateDeliveryTime(iDelivery delivery) { return DateTime.UtcNow; }
+        DateTime CalculateDeliveryTime(iDelivery delivery);
 
         /// <summary>
         /// Starts new Delivery in ActiveDeliveries using user input
         /// </summary>
-        public void StartDelivery() { }
+        void StartDelivery();
 
         /// <summary>
         /// Moves Delivery from ActiveDeliveries to FinishedDeliveries
         /// </summary>
-        public void FinishDelivery(Delivery deliveryToFinish) { }
+        void FinishDelivery(iDelivery deliveryToFinish);
         /// <summary>
         /// Moves Delivery from ActiveDeliveries to CancelledDeliveries
         /// </summary>
-        public void CancelDelivery(Delivery deliveryToCancel) { }
+        void CancelDelivery(iDelivery deliveryToCancel);
 
         /// <summary>
         ///Prints all active Deliveries
         /// </summary>
-        public void ListActiveDeliveries() { }
+        void ListActiveDeliveries();
 
         /// <summary>
         /// Prints all Finished Deliveries
         /// </summary>
-        public void ListFinishedDeliveries() { }
+        void ListFinishedDeliveries();
 
         /// <summary>
         /// Prints all Cancelled Deliveries
         /// </summary>
-        public void ListCancelledliveries() { }
+        void ListCancelledliveries();
 
         /// <summary>
         /// Finds and Prints Delivery by it's name
         /// </summary>
-        public iDelivery GetDeliveryByName(string deliveryName) { return null; }
+        iDelivery GetDeliveryByName(string deliveryName);
 
         /// <summary>
         /// Finds and Prints all deliveries assigned to Vehicle
         /// </summary>
-        public iVehicle GetDEliveriesForVehicle(string vehicleName) { return null; }
+        iVehicle GetDEliveriesForVehicle(string vehicleName);
     }
 }

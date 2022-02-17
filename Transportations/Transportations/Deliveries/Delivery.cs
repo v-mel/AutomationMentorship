@@ -8,7 +8,7 @@ namespace Transportations.Deliveries
         public string StartAddress { get; set; }
         public string DestinationAddress { get; set; }
         public int Distance { get; set; }
-        public int RouteType { get; set; }
+        public int[] RouteTypes { get; set; }
 
         public Delivery(decimal weigt, string startAddress, string destinationAddress) 
         {

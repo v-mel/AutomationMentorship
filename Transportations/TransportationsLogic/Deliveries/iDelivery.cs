@@ -6,6 +6,6 @@
         string StartAddress { get; set; }
         string DestinationAddress { get; set; }
         int Distance { get; set; }
-        int RouteType { get; set; }
+        int[] RouteTypes { get; set; }
     }
 }

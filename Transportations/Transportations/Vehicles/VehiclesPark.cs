@@ -24,7 +24,7 @@ namespace Transportations.Vehicles
         /// <summary>
         /// Removes Vehicle from Vehicles park by it's id in VehiclesList
         /// </summary>
-        public void RemoveVehicle(int) { };
+        public void RemoveVehicle(int vehicleName) { }
 
 
     }
